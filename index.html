@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>API Calls in JavaScript</title>
+  </head>
+  <body>
+    <header><h1>API Calls Demo</h1></header>
+
+    <section class="get-requests">
+      <h2>GET Requests</h2>
+      <div class="buttons">
+        <button id="fetch-btn">Fetch Data with fetch()</button>
+        <button id="xhr-btn">Fetch Data with XHR</button>
+      </div>
+      <div class="results" id="get-results">
+        <p class="placeholder">Results...</p>
+      </div>
+    </section>
+
+    <section class="post-request">
+      <h2>POST Request</h2>
+      <form id="post-form">
+        <div class="form-content">
+          <label for="post-title">Title:</label>
+          <input type="text" id="post-title" required/>
+        </div>
+        <div class="form-content">
+          <label for="post-body">Body::</label>
+          <textarea id="post-body" required></textarea>
+        </div>
+        <button type="submit">Send POST Request</button>
+      </form>
+      <div class="results" id="post-results">
+        <p class="placeholder">Results...</p>
+      </div>
+    </section>
+
+    <section class="put-request">
+        <h2>PUT Request</h2>
+        <form id="put-form">
+            <div class="form-content">
+                <label for="put-id">PUT Post ID:</label>
+                <input type="number" id="put-id" min="1" required>
+            </div>
+            <div class="form-content">
+                <label for="put-title">PUT Title:</label>
+                <input type="text" id="put-title" required>
+            </div>
+            <div class="form-content">
+                <label for="put-body">PUT Body:</label>
+                <textarea id="put-body" required></textarea>
+            </div>
+            <button type="submit">Send PUT Request</button>
+        </form>
+        <div class="results" id="put-results">
+            <p class="placeholder">Results...</p>
+        </div>
+    </section>
+
+    <section class="delete-request">
+        <h2>DELETE Request</h2>
+        <form id="delete-form">
+            <div class="form-content">
+                <label for="delete-id">Post ID to Delete:</label>
+                <input type="number" id="delete-id" min="1" required>
+            </div>
+            <button type="submit">Send DELETE Request</button>
+        </form>
+        <div class="results" id="delete-results">
+            <p class="placeholder">Results...</p>
+        </div>
+    </section>
+</div>
+
+<div class="error">
+    <div class="error-content">
+        <h3 id="error-type">Error</h3>
+        <p id="error-message"></p>
+    </div>
+</div>
+
+<footer><p>&copy; 2025 Ahmed Rahim</p></footer>
+  </body>
+</html>

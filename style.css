@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #8d8b8b;
+}
+
+header {
+  text-align: center;
+  padding: 15px;
+  background-color: #e8e8e8;
+}
+
+h1 {
+  font-size: 32px;
+  color: #1c1c1c;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #e8e8e8;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 12px 24px;
+  background: #47b2b2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #144b4b;
+  cursor: pointer;
+}
+
+.form-content {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  width: 99%;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.results {
+  padding: 15px;
+  background: #fff;
+  margin: 15px 0;
+}
+
+.error {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f6041c;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+.error-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.placeholder {
+  color: #676767;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #e8e8e8;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  section {
+    padding: 13px;
+  }
+}
